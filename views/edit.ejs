@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>add expenses</h1>
+        <form action="/updateex/<%= data._id %>?_method=put" method="post">
+            title:
+            <input type="text" name="title" value="<%= data.title %>"><br><br>
+            category:
+            <input type="text" name="category" value="<%= data.category %>"><br><br>
+            amount:
+            <input type="text" name="amount" value="<%= data.amount %>"><br><br>
+            date:
+            <input type="text" name="date" value="<%= data.date %>"><br><br>
+            description:
+            <input type="text" name="description" value="<%= data.description %>"><br><br>
+            
+            <button type="submit">submit</button>
+        </form>
+    </center>
+</body>
+</html>
